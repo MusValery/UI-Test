@@ -1,0 +1,39 @@
+<% var data = {
+    title: "Main Page"
+}; %>
+
+<%= _.template(require('./../includes/main.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="site-content login-page">
+    <div class="wrapper">
+
+        <div class="breadcrumbs">השמ םייח ,םולש</div>
+
+        <div class="head">
+            <h1 class="head__title">ריחמה תעצהב היפצ - תכרעמל הסינכ</h1>
+            <span class="head__icon"></span>
+        </div> 
+        <p class="subtitle">שדח דוק תחילש לע ץחל דוק תלביק אל םא ,הסינכה דוק תא ןזה </p>
+        <form class="form">
+            <div class="form__line">
+                <label class="label">שמתשמ םש</label>
+                <div class="form__wrap">
+                    <span class="cross"></span>
+                    <input type="text" class="input">
+                </div>
+            </div>
+            <div class="form__line">
+                <label class="label">אמסיס</label>
+                <input type="text" class="input">
+            </div>
+            <div class="form__actions">
+                <button class="btn btn_gray"><span class="arrow"></span>הסינכ</button>
+                <a href="second_page.html" class="btn btn_green">לוטיב</a>
+            </div>
+        </form>
+    </div>
+</main>
+    
+
+<%= _.template(require('./../includes/bottom-side.html').default)(data) %>

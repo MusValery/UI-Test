@@ -1,0 +1,271 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f6f6f6;
+    font-weight: 400;
+}
+
+.breadcrumbs {
+	text-align: end;
+	padding: 20px 62px 20px 24px;
+	background-color: $content;
+}
+
+.wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+.login-page {
+	background-image: url(../img/driver.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 71px;
+  
+		&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(33, 50, 94, 0.8);
+		}
+}
+
+.line {
+	height: 5px;
+	border: none;
+	width: 1076px;
+	background-color: white;
+}
+
+.form {
+	text-align: center;
+
+		&__wrap {
+			display: inline-block;
+			position: relative;
+		}
+}
+
+.cross {
+	background-image: url(../img/cross.png);
+    background-size: 18px;
+    height: 39px;
+    width: 30px;
+    position: absolute;
+    background-repeat: no-repeat;
+	top: 20px;
+	left: 28px;
+	z-index: 1;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #fff;
+	font-size: 48px;
+	width: 1076px;
+	margin: 0 auto;
+	color: #FFFFFF;
+	padding-left: 181px;
+	padding-top: 43px;
+
+	&__icon {
+		background-image: url(../img/user.png);
+		width: 76px;
+		height: 76px;
+		background-size: 76px;
+	}
+
+	&__white {
+		width: 970px;
+		background-color: #FFFFFF;
+		color: black;
+		font-size: 30px;
+		border-radius: 35px;
+		height: 58px;
+		text-align: start;
+    	padding-left: 154px;
+		color: #5F5F5F;
+		left: 0;
+		position: absolute;
+	}
+
+	&__orange {
+		width: 485px;
+		background-color: $orange;
+		font-size: 30px;
+		border-radius: 35px;
+		height: 58px;
+		text-align: center;
+		left: 490px;
+		position: absolute;
+	}
+}
+
+.subtitle {
+	font-size: 24px;
+	text-align: center;
+	padding: 79px 57px;
+	color: #FFFFFF;
+}
+
+.label {
+	font-size: 24px;
+	color: #FFFFFF;
+	display: block;
+	width: 350px;
+	text-align: right;
+	margin: 0 auto;
+	padding: 15px 40px;
+}
+
+.input {
+	background: #FFFFFF;
+	border-radius: 35px;
+	width: 350px;
+	height: 58px;
+	margin-bottom: 63px;
+}
+
+.btn_gray {
+	 background-color: $light_grey;
+	 border-radius: 35px;
+	 width: 350px;
+	 font-size: 24px;
+	 margin-left: 41px;
+	 color: #FFFFFF;
+	 min-width: 350px;
+	 height: 58px;
+}
+
+.arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9.5px 19px 9.5px 0;
+	border-color: transparent #FFFFFF transparent transparent;
+	position: absolute;
+	margin-left: -45px;
+    margin-top: 6px;
+}
+
+.btn_green {
+	 background-color: $c_green;
+	 border-radius: 35px;
+	 font-size: 24px;
+	 color: #FFFFFF;
+	 margin-left: 41px;
+	 margin-left: 41px;
+	 padding: 15px 145px;
+	 min-width: 350px;
+}
+
+.divider {
+	display: inline-block;
+	width: 1px;
+	height: 29px;
+	background-color: #E5E5E5;
+	vertical-align: middle;
+	margin-right: 13px;
+}
+
+ @media screen and (max-width: 1200px) {
+	 
+	.login-page {
+		background-image: url(../img/font2.png);
+	}
+	.breadcrumbs {
+		display: none;
+	}
+	.line {
+		width: 100%;
+	}
+	.head {
+		width: calc(100% - 48px);
+    	padding: 0;
+		font-size: 24px;
+		font-weight: bold;
+		border-width: 3px;
+		padding: 16px 0 12px;
+
+		&__title {
+			padding: 0;
+			text-align: right;
+			line-height: 28px;
+		}
+		&__icon {
+			flex-shrink: 0;
+			width: 39px;
+			height: 39px;
+			background-size: 39px;
+			background-repeat: no-repeat;
+			margin-left: 7px;
+		}
+	}
+	.subtitle {
+		font-size: 24px;
+		align-items: center;
+		padding-bottom: 0;
+	}
+	.form {
+		padding: 0 24px;
+
+		&__wrap {
+			width: 100%;
+		}
+		&__actions {
+			display: flex;
+			margin-top: 92px;
+		}
+	}
+	.cross {
+		top: 13px;
+		left: 18px;
+		background-size: 14px;
+	}
+	.label {
+		font-size: 18px;
+		width: 100%;
+		margin-top: 56px;
+		padding: 0 16px 12px 0;
+	}
+	.input {
+		width: 100%;
+		height: 40px;
+		margin-bottom: 0;
+	}
+	.arrow {
+		border-width: 7.5px 13px 7.5px 0;
+		margin-left: -30px;
+		margin-top: 4px;
+		
+	}
+	.btn_gray {
+		width: calc(50% - 9px);
+		min-width: auto;
+		font-size: 18px;
+		line-height: 21px;
+		padding-left: 32px;
+		padding: 10px;
+		height: 40px;
+		margin: 0;
+	}
+	.form__actions {
+		justify-content: space-between;
+	}
+	.btn_green {
+		width: calc(50% - 9px);
+		min-width: auto;
+		font-size: 18px;
+		line-height: 21px;
+		padding: 10px;
+		height: 40px;
+		margin: 0;
+	}
+
+ }
